@@ -6,7 +6,9 @@ import org.nutz.mvc.annotation.At;
 
 public class UserModule {
 	@At("ping")
-	private Object ping() {
-		return new Date();
+	public Object ping() {
+		Date date = new Date();
+		System.out.println("时间：" + date);
+		return date;
 	}
 }
