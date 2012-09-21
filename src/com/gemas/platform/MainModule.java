@@ -8,7 +8,7 @@ import org.nutz.mvc.annotation.SetupBy;
 import org.nutz.mvc.ioc.provider.ComboIocProvider;
 
 @Modules(scanPackage = true)
-@Ok("raw")
+@Ok("json")
 @Fail("json")
 @IocBy(type = ComboIocProvider.class, args = {
 		"*org.nutz.ioc.loader.json.JsonLoader", "ioc/",

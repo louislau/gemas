@@ -9,6 +9,7 @@ public class User {
 	@Id
 	private Integer id;
 	private String name;
+	private transient String passwd;
 
 	public Integer getId() {
 		return id;
@@ -33,7 +34,5 @@ public class User {
 	public void setPasswd(String passwd) {
 		this.passwd = passwd;
 	}
-
-	private String passwd;
 
 }
